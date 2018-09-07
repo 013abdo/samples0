@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.usersearchpage">
+   <children>
+      <TableView fx:id="info" layoutX="14.0" layoutY="92.0" prefHeight="295.0" prefWidth="828.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="75.0" text="idCol" />
+          <TableColumn fx:id="firstnameCol" prefWidth="75.0" text="firstnameCol" />
+            <TableColumn fx:id="lastnameCol" prefWidth="75.0" text="lastnameCol" />
+            <TableColumn fx:id="phoneCol" prefWidth="75.0" text="phoneCol" />
+            <TableColumn fx:id="emailCol" prefWidth="75.0" text="emailCol" />
+            <TableColumn fx:id="jobCol" prefWidth="75.0" text="jobCol" />
+            <TableColumn fx:id="genderCol" prefWidth="75.0" text="genderCol" />
+            <TableColumn fx:id="addressCol" prefWidth="75.0" text="addressCol" />
+            <TableColumn fx:id="cityCol" prefWidth="75.0" text="cityCol" />
+            <TableColumn fx:id="zipCol" prefWidth="75.0" text="zipCol" />
+            <TableColumn fx:id="na_idCol" prefWidth="75.0" text="na_idCol" />
+        </columns>
+      </TableView>
+      <TextField fx:id="sorting" layoutX="14.0" layoutY="57.0" />
+   </children>
+</AnchorPane>

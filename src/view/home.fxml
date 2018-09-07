@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.homepage">
+   <children>
+      <GridPane layoutX="120.0" layoutY="60.0" prefHeight="296.0" prefWidth="393.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#user" prefHeight="99.0" prefWidth="133.0">
+               <graphic>
+                  <ImageView fitHeight="93.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/User-info.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button mnemonicParsing="false" onAction="#property" prefHeight="96.0" prefWidth="130.0" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fitHeight="83.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/house.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button mnemonicParsing="false" onAction="#office" prefHeight="95.0" prefWidth="131.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fitHeight="90.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/office-desk-office-desk-clipart_247-201.jpeg" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button mnemonicParsing="false" onAction="#lease" prefHeight="102.0" prefWidth="134.0" GridPane.columnIndex="2">
+               <graphic>
+                  <ImageView fitHeight="88.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Lease_Image_Toowoomba_Real_Estate_McAdam_and_Turnbull_Realty.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button mnemonicParsing="false" onAction="#apartment" prefHeight="98.0" prefWidth="136.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fitHeight="82.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Building.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button mnemonicParsing="false" onAction="#Out" prefHeight="98.0" prefWidth="130.0" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="89.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/logout-door-symbol.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button mnemonicParsing="false" onAction="#rent" prefHeight="96.0" prefWidth="140.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="90.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/150021-200.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </GridPane>
+      <Label layoutX="198.0" layoutY="14.0" text="Welcome to RealEstate Office System!!" />
+   </children>
+</AnchorPane>

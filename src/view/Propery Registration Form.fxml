@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Property.Newproperties">
+   <children>
+      <Label layoutX="162.0" layoutY="6.0" text="Property Registration Form">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="102.0" layoutY="73.0" prefHeight="526.0" prefWidth="596.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="74.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="114.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="66.0" minHeight="0.0" prefHeight="57.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="84.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="63.0" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="198.0" text="property_no">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="197.0" text="name" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="199.0" text="type" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="195.0" text="city" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="198.0" text="address" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="204.0" text="zip" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="199.0" text="floor(s" GridPane.rowIndex="5">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="201.0" text="apartment(s" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="202.0" text="hall(s" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="199.0" text="room(s" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="203.0" text="toilet(s" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="198.0" text="kitchen(s" GridPane.rowIndex="7">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <TextField fx:id="property_numfild" GridPane.columnIndex="1" />
+            <TextField fx:id="property_namefild" GridPane.rowIndex="2" />
+            <TextField fx:id="property_typefild" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="property_cityfild" GridPane.rowIndex="4" />
+            <TextArea fx:id="property_addressfild" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="property_zipfild" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField fx:id="floor_nofild" GridPane.rowIndex="6" />
+            <TextField fx:id="apartment_nofild" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="hall_nofild" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <TextField fx:id="kitchen_nofild" GridPane.rowIndex="8" />
+            <TextField fx:id="room_nofild" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="toilet_nofild" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <ChoiceBox fx:id="card" prefHeight="25.0" prefWidth="202.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="202.0" text="office_num" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <ButtonBar layoutX="300.0" layoutY="633.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+            <Button mnemonicParsing="false" onAction="#save" prefHeight="45.0" prefWidth="96.0" text="Ok" />
+            <Button mnemonicParsing="false" onAction="#cancel" prefHeight="46.0" prefWidth="111.0" text="cancel" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

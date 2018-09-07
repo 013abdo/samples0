@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="722.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.Users">
+   <children>
+      <Label layoutX="496.0" text="Real_Estate User Page">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <SplitPane dividerPositions="0.09123055162659123" layoutY="44.0" prefHeight="678.0" prefWidth="1416.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="307.0" prefWidth="185.0">
+               <children>
+                  <Button layoutX="5.0" layoutY="33.0" mnemonicParsing="false" onAction="#Newuser" prefHeight="66.0" prefWidth="116.0" text="New User" />
+                  <Button layoutX="5.0" layoutY="108.0" mnemonicParsing="false" onAction="#Updateuser" prefHeight="66.0" prefWidth="116.0" text="Update" />
+                  <Button layoutX="5.0" layoutY="218.0" mnemonicParsing="false" onAction="#deleteuser" prefHeight="75.0" prefWidth="116.0" text="Delete" />
+                  <Button layoutX="5.0" layoutY="301.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="116.0" text="Search" />
+                  <Button layoutX="5.0" layoutY="387.0" mnemonicParsing="false" onAction="#back" prefHeight="82.0" prefWidth="116.0" text="Home....." />
+                  <TextField fx:id="sorting" layoutY="2.0" prefHeight="25.0" prefWidth="126.0" promptText="type to search" />
+                  <TextField fx:id="deletefild" layoutY="184.0" prefHeight="25.0" prefWidth="126.0" promptText="select id to delete" />
+               </children></AnchorPane>
+          <AnchorPane prefHeight="307.0" prefWidth="1178.0">
+               <children>
+                  <TableView fx:id="info" editable="true" layoutY="-1.0" prefHeight="676.0" prefWidth="1282.0">
+                    <columns>
+                      <TableColumn fx:id="idCol" prefWidth="109.99996948242188" text="id" />
+                      <TableColumn fx:id="firstnameCol" minWidth="0.0" prefWidth="88.00003051757812" text="firstname" />
+                        <TableColumn fx:id="lastnameCol" minWidth="0.0" prefWidth="96.0" text="lastname" />
+                        <TableColumn fx:id="phoneCol" minWidth="0.0" prefWidth="135.0" text="phone" />
+                        <TableColumn fx:id="emailCol" minWidth="0.0" prefWidth="121.0" text="email" />
+                        <TableColumn fx:id="jobCol" minWidth="0.0" prefWidth="115.0" text="job" />
+                        <TableColumn fx:id="genderCol" minWidth="0.0" prefWidth="89.0" text="gender" />
+                        <TableColumn fx:id="addressCol" minWidth="0.0" prefWidth="159.0" text="address" />
+                        <TableColumn fx:id="cityCol" prefWidth="102.0" text="city" />
+                        <TableColumn fx:id="zipCol" prefWidth="109.0" text="zip" />
+                        <TableColumn fx:id="na_idCol" prefWidth="156.0" text="na_id" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

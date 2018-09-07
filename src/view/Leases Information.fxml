@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.LeasesPage">
+   <children>
+      <TableView fx:id="orders" layoutY="67.0" prefHeight="484.0" prefWidth="1374.0">
+        <columns>
+          <TableColumn fx:id="lease_noCol" prefWidth="75.0" text="lease_noCol" />
+            <TableColumn fx:id="receiveCol" prefWidth="75.0" text="receiveCol" />
+            <TableColumn fx:id="lodger_phoneCol" prefWidth="75.0" text="lodger_phoneCol" />
+          <TableColumn fx:id="amountCol" prefWidth="147.0" text="amountCol" />
+            <TableColumn fx:id="moneyCol" prefWidth="113.0" text="moneyCol" />
+            <TableColumn fx:id="duration_fromCol" prefWidth="148.0" text="duration_fromCol" />
+            <TableColumn fx:id="duration_untilCol" prefWidth="141.0" text="duration_untilCol" />
+            <TableColumn fx:id="addressCol" prefWidth="172.0" text="addressCol" />
+            <TableColumn fx:id="office_nameCol" prefWidth="152.0" text="office_nameCol" />
+            <TableColumn fx:id="office_telCol" prefWidth="152.0" text="office_telCol" />
+            <TableColumn fx:id="apartment_noCol" prefWidth="75.0" text="apartment_no" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="800.0" layoutY="25.0" text="Leases Information Page" />
+      <ButtonBar layoutX="385.0" layoutY="600.0" prefHeight="80.0" prefWidth="554.0">
+        <buttons>
+            <Button minWidth="55.0" mnemonicParsing="false" onAction="#back" prefHeight="69.0" text="Back" />
+            <Button mnemonicParsing="false" prefHeight="70.0" text="Print" />
+            <Button mnemonicParsing="false" onAction="#renewlease" prefHeight="71.0" text="Renew" />
+          <Button mnemonicParsing="false" onAction="#leaseview" prefHeight="71.0" text="Preview" />
+            <Button mnemonicParsing="false" onAction="#delete" prefHeight="71.0" text="Delete" />
+            <Button mnemonicParsing="false" onAction="#editlease" prefHeight="71.0" text="Update" />
+            <Button minWidth="55.0" mnemonicParsing="false" onAction="#newlease" prefHeight="71.0" prefWidth="208.0" text="New" />
+        </buttons>
+      </ButtonBar>
+      <TextField fx:id="find" layoutX="14.0" layoutY="42.0" promptText="type to search" />
+      <TextField fx:id="deletefild" layoutX="188.0" layoutY="42.0" promptText="type to delete" />
+   </children>
+</AnchorPane>

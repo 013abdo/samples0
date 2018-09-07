@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.PropertyPage">
+   <children>
+      <Label alignment="CENTER" layoutX="480.0" layoutY="3.0" prefHeight="37.0" prefWidth="378.0" text="Property Data system">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <SplitPane dividerPositions="0.11874105865522175" layoutY="48.0" prefHeight="652.0" prefWidth="1362.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="849.0" prefWidth="174.0">
+               <children>
+                  <Button layoutX="14.0" layoutY="46.0" mnemonicParsing="false" onAction="#Newproperty" prefHeight="99.0" prefWidth="112.0">
+                     <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/add-home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button layoutX="13.0" layoutY="165.0" mnemonicParsing="false" onAction="#Editproperty" prefHeight="99.0" prefWidth="114.0">
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button layoutX="13.0" layoutY="325.0" mnemonicParsing="false" onAction="#Deleteroperty" prefHeight="99.0" prefWidth="114.0">
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/delete-xxl.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button layoutX="13.0" layoutY="444.0" mnemonicParsing="false" onAction="#back" prefHeight="99.0" prefWidth="114.0">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/back-arrow.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <TextField fx:id="sorting" layoutX="5.0" layoutY="14.0" promptText="type to search" />
+                  <TextField fx:id="deletefild" layoutX="5.0" layoutY="279.0" promptText="select or type to delete" />
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="849.0" prefWidth="1193.0">
+               <children>
+                  <GridPane layoutY="292.0" prefHeight="357.0" prefWidth="1195.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="173.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="298.0" minWidth="10.0" prefWidth="283.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="267.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="472.0" minWidth="10.0" prefWidth="255.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="437.0" minWidth="10.0" prefWidth="217.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="40.0" prefWidth="357.0" text="Information system" GridPane.columnIndex="3">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="36.0" prefWidth="309.0" text="Residential_Units" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="226.0" text="Real_Estate" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <Label text="no.kitchen(s)" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                        <Label text="no.toilet(s)" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                        <Label text="no.hall(s)" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label text="property_zip" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Label text="property_city" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Label text="no.room(s)" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                        <Label text="no.apartment(s)" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <Label text="no.floor(s)" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label text="Size_Data" GridPane.rowIndex="6" />
+                        <Label text="Unit Size:" GridPane.rowIndex="5" />
+                        <Label text="Address Data" GridPane.rowIndex="4" />
+                        <Label text="Address_information:" GridPane.rowIndex="3" />
+                        <Label text="Office_info" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <Label text="property_address" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label text="property_type" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Label text="Property_name" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Label text="property_num" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="Property_Data:" GridPane.rowIndex="2" />
+                        <Label text="Property Information:" GridPane.rowIndex="1" />
+                        <TextField fx:id="property_numfild" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="property_namefild" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="property_typefild" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <TextArea fx:id="property_addressfild" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="property_cityfild" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <TextField fx:id="property_zipfild" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                        <TextField fx:id="floor_nofild" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <TextField fx:id="apartment_nofild" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                        <TextField fx:id="room_nofild" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                        <TextField fx:id="hall_nofild" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <TextField fx:id="kitchen_nofild" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                        <TextField fx:id="toilet_nofild" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                        <TextField fx:id="office_numfild" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                  <TableView fx:id="housing" prefHeight="292.0" prefWidth="1195.0" tableMenuButtonVisible="true">
+                     <columns>
+                        <TableColumn fx:id="property_numCol" prefWidth="119.0" text="property_numCol" />
+                        <TableColumn fx:id="property_nameCol" prefWidth="166.0" text="property_nameCol" />
+                        <TableColumn fx:id="property_typeCol" prefWidth="189.0" text="property_typeCol" />
+                        <TableColumn fx:id="property_addressCol" prefWidth="199.0" text="property_addressCol" />
+                        <TableColumn fx:id="property_cityCol" prefWidth="167.0" text="property_cityCol" />
+                        <TableColumn fx:id="property_zipCol" prefWidth="121.0" text="property_zipCol" />
+                        <TableColumn fx:id="floor_noCol" prefWidth="97.0" text="floor_noCol" />
+                        <TableColumn fx:id="office_numCol" prefWidth="135.0" text="office_numCol" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.RentingSystem">
+   <children>
+      <SplitPane dividerPositions="0.11516452074391989" layoutX="137.0" layoutY="47.0" prefHeight="753.0" prefWidth="1400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="47.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TextField layoutX="-2.0" layoutY="1.0" />
+                  <TextField layoutX="-2.0" layoutY="216.0" />
+                  <Button layoutX="25.0" layoutY="39.0" mnemonicParsing="false" onAction="#add" prefHeight="75.0" prefWidth="105.0" text="New" />
+                  <Button layoutX="25.0" layoutY="130.0" mnemonicParsing="false" onAction="#edit" prefHeight="75.0" prefWidth="105.0" text="Edit" />
+                  <Button layoutX="20.0" layoutY="250.0" mnemonicParsing="false" onAction="#delete" prefHeight="75.0" prefWidth="105.0" text="Delete" />
+                  <Button layoutX="20.0" layoutY="338.0" mnemonicParsing="false" onAction="#back" prefHeight="75.0" prefWidth="105.0" text="Back" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="floor" layoutX="-2.0" layoutY="-1.0" prefHeight="751.0" prefWidth="1234.0">
+                    <columns>
+                        <TableColumn fx:id="rent_idCol" prefWidth="146.0" text="rent_id" />
+                        <TableColumn fx:id="property_numCol" prefWidth="197.0" text="property_num" />
+                      <TableColumn fx:id="floor_noCol" prefWidth="193.0" text="floor_no" />
+                      <TableColumn fx:id="apartment_noCol" prefWidth="236.0" text="apartment_no" />
+                        <TableColumn fx:id="lease_noCol" prefWidth="244.0" text="lease_no" />
+                        <TableColumn fx:id="rent_stateCol" prefWidth="217.0" text="rent_state" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Label layoutX="627.0" layoutY="14.0" text="Renting Apartments system" />
+   </children>
+</AnchorPane>
